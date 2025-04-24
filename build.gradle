@@ -24,6 +24,9 @@ tasks.withType(JavaCompile) {
 dependencies {
     compileOnly('jakarta.servlet:jakarta.servlet-api:6.1.0')
 
+    implementation 'com.oracle.database.jdbc:ojdbc11:23.7.0.25.01'
+    implementation 'com.oracle.database.security:oraclepki:23.7.0.25.01'
+
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
 }
